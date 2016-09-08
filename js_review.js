@@ -99,3 +99,56 @@ var AdvWeb2 = {
 		{name: 'Barbara', ufid: 000000, grades: [1, 4, 9]}
 	]
 };
+
+
+//identifiers = case sensitive, must start with lower/uppercase letter, underscore, or dollar sign.
+/*
+var A = 'hello';
+var abcABC = 'there';
+var _howdy = 123;
+var $testing = [1, 2, 3];
+WRONG: var 7num = 7;
+WRONG: var var = 8; or var function = 9; (can't use reserved words)
+*/
+
+//functions = group code together and let you run it all at one time
+//Call by nameOfTheFunction();
+
+function ordersFood() {
+        console.log( 'waiter says - make me a drink' );
+        console.log( "helper says - here's the drink" );
+        return "Here's your coke";
+}
+
+function greet() {
+    return 'Well hello there!';
+}
+
+console.log( greet() );
+
+//function declaration
+//function combiner( person, message ) {
+//    return person + ' says ' + message;
+//}
+
+//var message = combiner( 'Lauren', 'Hello there class');
+//console.log( message );
+
+
+// function expression
+var combiner = function abcde( person, message ) {
+    return person + ' says ' + message;
+};
+
+var message = combiner( 'Lauren', 'Hello there class of Fall 2016');
+console.log( message );
+
+
+function plus(thing1, thing2) {
+    return thing1 + thing2;
+}
+
+console.log ( plus('lauren', 'hello') );
+console.log ( plus(3, 4) );
+
+//function expression
